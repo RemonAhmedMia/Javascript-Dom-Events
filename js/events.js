@@ -12,7 +12,7 @@ function makePink(){
 // option:05
 const greenBtn = document.getElementById("green");
 greenBtn.addEventListener('click' , function makeGreen(){
-    document.body.style.background = 'blue';
+    document.body.style.background = 'green';
 })
 
 
