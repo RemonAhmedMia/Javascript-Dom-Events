@@ -25,5 +25,19 @@ document.getElementById("btn-update").addEventListener('click' , function(){
     const inputText = inputFeild.value ;
     const paragraph = document.getElementById("update-paragraph");
     paragraph.innerText = inputText ;
+    paragraph.style.fontSize = "30px"
     inputFeild.value = " " ;
+});
+
+document.getElementById("btn-post").addEventListener('click' , function(){
+    //btn-post holo button er id karon prothom button k dhorbo amra
+    //step-02 holo textarea k dhora
+    const commentBox = document.getElementById("new-comment");
+    //ekhn textarea/input er vitor er likha ta k pabar jonno;
+    const newComment = commentBox.value;
+    const commentContainer = document.getElementById("comment-container");
+    const paragraphOne = document.createElement("p");
+    paragraphOne.innerText = newComment ;
+    commentContainer.appendChild(paragraphOne);
+    commentBox.value = " ";
 })
